@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de personagem:</title>
+    <style>
+        body {
+            background-color: rgb(255, 199, 208);
+        }
+        h1 {
+            color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CRIE SEU PERSONAGEM DE RPG:</h1>
+    <form>
+        <div>
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <br>
+
+            <label for="name">Gênero:</label><br>
+            <input type="radio" id="femi" name="genero" value="Feminino">
+            <label for="femi">Feminino</label><br>
+            <input type="radio" id="masc" name="genero" value="Masculino">
+            <label for="masc">Masculino</label><br>
+            <input type="radio" id="outro" name="genero" value="Outro/prefiro não informar">
+            <label for="outro">Outro/prefiro não informar</label><br>
+            <br>
+
+            <label for="name">Raça:</label><br>
+            <input type="radio" id="humano" name="raca" value="Humano">
+            <label for="humano">Humano</label><br>
+            <input type="radio" id="fada" name="raca" value="Fada">
+            <label for="fada">Fada</label><br>
+            <input type="radio" id="Bruxo/a" name="raca" value="Bruxo/a">
+            <label for="Bruxo/a">Bruxo/a</label><br>
+            <br>
+
+            <label for="name">Informe quais poderes seu personagem terá:</label><br>
+            <input type="checkbox" id="poder1" name="poder1" value="ControlarMentes">
+            <label for="poder1"> Controlar mentes</label><br>
+            <input type="checkbox" id="poder2" name="poder2" value="Invisibilidade">
+            <label for="poder2"> Invisibilidade</label><br>
+            <input type="checkbox" id="poder3" name="poder3" value="Voar">
+            <label for="poder3"> Voar</label><br>
+            <input type="checkbox" id="poder4" name="poder4" value="Telepatia">
+            <label for="poder4"> Telepatia</label><br>
+            <input type="checkbox" id="poder5" name="poder5" value="ElementosNatureza">
+            <label for="poder5"> Elementos da natureza</label><br>
+            <br>
+
+            <label for="txtNum">Habilidades Físicas:</label>
+            <input type="number" name="txtNum" id="txtNum"><br>
+            <br>
+
+            <label for="txtData">Data de nascimento: </label>
+            <input type="date" name="txtData" id="txtData"><br>
+            <br>
+
+            <label for="txtCor">Cor do manto:</label>
+            <input type="color" name="txtCor" id="txtCor"><br>
+            <br>
+
+            <label for="txtPass">Código secreto para enganar inimigo: </label>
+            <input type="password" name="txtPass" id="txtPass"><br>
+            <br>
+
+            <textarea name="message" rows="10" cols="30">
+                Adicione aqui uma descrição sobre seu personagem.
+                </textarea><br>
+            <br>
+
+            <label for="name">Em qual universo você irá nascer?</label><br>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Caminho dos Deuses">
+                <option value="Vila da Juventude">
+                <option value="Fazenda do Assombro">
+                <option value="Vale da Música">
+                <option value="Mundo dos Elfos">
+            </datalist>
+
+            <input type="button" onclick="alert('Bem vindo a esse universo!')" value="Clique aqui para prosseguir!">
+    </form>
+
+</body>
+
+</html>
